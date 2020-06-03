@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head><link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"></head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <body>
      
       <div class="fade-out">
+        <!-- <a  id="aj" href="home.html"></a> -->
+        <div id="aj"><a href="home.html"><h2><i class="icofont-arrow-right"></i><p id="demo"></p></h2></a></div>
+          
+          
       </div>
     
       
@@ -12,10 +17,26 @@
          setTimeout(function(){
             window.location.href = "home.html";
          }, 15000);
-        
+         var i = 14;                 
+
+function myLoop() {         
+  setTimeout(function() {   
+    document.getElementById("demo").innerHTML = i; 
+    i--;                    
+    if (i > 0) {           
+      myLoop();             
+    }                       
+  }, 1000)
+}
+
+myLoop(); 
+
       </script>
       
       <style>
+        #aj{position: relative;left:50%;margin: none;padding:none;}
+        p{margin: 0;}
+        #demo{margin: none;padding:none;}
         @media only screen and (max-width:900px) {
           .fade-out{background-image: url(assets/img/pic3.jpg);
             background-repeat: no-repeat;
@@ -29,9 +50,9 @@
             background-size: 100% 100%;
          }
       }
+        a{text-decoration: none;color:black;}
         
-        
-        
+       
          .fade-out {
                     position: fixed;
                     left: 0px;
