@@ -27,7 +27,11 @@
   
   <link href="assets/css/style.css" rel="stylesheet">
 
- <style>.simplenav{height:82px;background-color: #22538e;}</style>
+ <style>.simplenav{height:82px;background-color: #22538e;}img{margin:7px;}
+ 
+ 
+
+</style>
 </head>
 
 <body>
@@ -60,15 +64,40 @@
           
 
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+      <!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
   <main id="main">
+    
     <div class="simplenav">
     </div>
- <b>media here</b></main>
+      <div class="container col-lg-12 col-md-12 col-sm-12">
+        <br><br>
+        
+          <a href="assets/img/Media/1.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/1.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/2.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/2.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/3.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/3.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/4.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/4.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/5.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/5.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/6.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/6.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/7.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/7.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/8.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/8.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/9.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/9.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/10.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/10.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/11.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/11.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/12.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/12.jpg" width="300" height="300"></a>
+          <a href="assets/img/Media/13.jpg" data-gall="portfolioGallery" class="venobox1"><img src="assets/img/Media/13.jpg" width="300" height="300"></a>
+          
+
+      </div>
+
+
+
+
+ </main>
   <!-- ======= Footer ======= -->
   <!-- <footer id="footer">
     <div class="container">
@@ -83,6 +112,7 @@
   <!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -98,7 +128,16 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js">
+  $('.venobox_custom').venobox({
+    framewidth : '100px',                            // default: ''
+    frameheight: '100px',                            // default: ''
+    border     : '10px',                             // default: '0'
+    bgcolor    : '#5dff5e',                          // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+   
+});
+  </script>
 
 </body>
 

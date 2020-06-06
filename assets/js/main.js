@@ -135,8 +135,16 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
+      $('.venobox1').venobox({
+        framewidth : '400px',                            
+        frameheight: '550px',                            
+        border     : '10px'                           
+    });
+     
+
     });
   });
+ 
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
